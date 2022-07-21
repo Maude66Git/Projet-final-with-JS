@@ -1,0 +1,2 @@
+orange: #ce3309
+blue: #1e73be

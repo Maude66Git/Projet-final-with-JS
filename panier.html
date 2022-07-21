@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project GMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-panier">
+    <header id="header">
+        <nav class="main-header is-sticky">
+            <div class="section__inner">
+                <div class="section-logo">
+                    <a href="index.html">
+                        <img class="logo-gmc" src="Images/Logo-GMC-small.png" alt="Logo-GMC"/>
+                    </a>
+                </div>
+                <label class="menu-label" for="toggle">☰</label>
+                <input type="checkbox" id="toggle">
+                <div class="main-nav">
+                            <ul class="main-menu">
+                                <li><a href="index.html" class="menufont">Accueil</a></li> 
+                                <li><a href="chanteuse.html" class="menufont">Chanteuse</a></li>
+                                <li><a href="comedienne.html" class="menufont">Comédienne</a></li>
+                                <li><a href="contact.html" class="menufont" >Contact</a></li>      
+                            </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-panier" >
+        <div class="Cart-Container" id="panier">
+
+            <div class="Header-album">
+                <h3 class="Heading-album">Mon Panier!</h3>
+                <!--<h3 class="text-pu">Prix unitaire en €</h3>-->
+                
+                
+            </div>
+        
+            <!--Ajout du premier produit-->
+            <div class="Cart-Item">
+                <button class="remove" type="button"><u>Supprimer</u></button>
+                <div class="image-box">
+                    <img src="images/album-GMC-vente.png" alt="Album" height="120"; />
+                </div>
+                <div class="about">
+                    <h1 class="title">Album</h1>
+                    <h3 class="subtitle">GMC Project</h3>
+                    <img src="images/icone_stock2.jpg" alt="icone en stock" height="30"/>
+                </div>
+                <!--Le compteur du produit-->
+                <div class="counter">
+                    <button class="btn-act-moins" type="button">-</button>
+                    <input type="text" placeholder="Unit price" class="qty" value="1">
+                    <!--<div class="count">1</div>-->
+                    <button class="btn-act-plus" type="button">+</button>
+                </div>
+                <h3 class="text-pu-responsive">Prix unitaire en €</h3>
+                <div class="price">15</div>
+                
+                
+                <!--Le prix du produit-->
+                <div class="prices">
+                    <!--<div class="amount">4€</div>-->
+                        <img src="images/Coeur-vide.png" id="heart-ic-size" onclick="changeImage()"/>
+                </div>
+            </div>  
+        
+            
+            
+            <!--Création de la partie sous total produit et commander-->
+            <hr> 
+            <div class="checkout">
+                <div class="total">
+                    <div>
+                        <div class="Subtotal">Total</div>
+                        <!--<div class="items">2 produits</div>-->
+                    </div>
+                    <div class="totalamount">15€</div>
+                </div>
+                    <button class="button-panier"><a target="_blank" href="https://i.imgflip.com/2rb19p.jpg">Commander</a></button>
+                
+            </div>
+        </div>
+        
+    </section>
+<script src="main.js"></script>
+</body>
+</html>
